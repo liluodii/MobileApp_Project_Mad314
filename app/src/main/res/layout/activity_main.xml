@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bklg"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginRight="50dp"
+        android:ems="10"
+        android:hint="Email"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@android:color/background_dark" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Email"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginRight="50dp"
+        android:ems="10"
+        android:hint="Password"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/SignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Password"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="133dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginBottom="250dp"
+        android:text="SIGN IN" />
+
+    <RadioButton
+        android:id="@+id/Customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginBottom="173dp"
+        android:text="User" />
+
+    <RadioButton
+        android:id="@+id/Employee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="62dp"
+        android:layout_marginRight="62dp"
+        android:layout_marginBottom="180dp"
+        android:text="Employee" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="110dp"
+        android:text="Way better than a rental car"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="35dp"/>
+
+</RelativeLayout>
