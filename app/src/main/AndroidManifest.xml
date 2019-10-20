@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".CustomerSignUp"></activity>
+=======
+        <activity android:name=".Modify"></activity>
+>>>>>>> afa3405d8d53e7c75ad65e35b445a6cf8f6bbb68
         <activity android:name=".LoginPage" />
         <activity android:name=".MainActivity">
             <intent-filter>
