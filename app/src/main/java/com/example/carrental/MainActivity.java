@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         final TextView message=findViewById(R.id.message);
         final EditText password = findViewById(R.id.Password);
         final Button login = findViewById(R.id.SignIn);
+        final Button signup=findViewById(R.id.signUp);
         //final CheckBox cbUser = (CheckBox) view.findViewById(R.id.Customer);
         //final CheckBox cbEmployee = (CheckBox) view.findViewById(R.id.Employee);
 
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         //cbEmployee.setChecked(!cbEmployee.isChecked());
 
         final Intent myIntent =new Intent(MainActivity.this,LoginPage.class);
+        final Intent myIntent2=new Intent(MainActivity.this,CustomerSignUp.class);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,7 +47,14 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
+
         );
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(myIntent2);
+            }
+        });
     }
 }
 

@@ -46,14 +46,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Password"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="133dp"
-        android:layout_marginTop="105dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="78dp"
         android:layout_marginBottom="250dp"
         android:text="SIGN IN" />
 
     <RadioButton
-        android:id="@+id/Customer"
+        android:id="@+id/RDCustomer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -88,10 +87,21 @@
         android:layout_marginEnd="60dp"
         android:layout_marginLeft="144dp"
         android:layout_marginTop="110dp"
-        android:text="Way better than a rental car"
+        android:text="CAR RENTAL"
         style="@style/TextAppearance.AppCompat.Headline"
         android:textColor="@android:color/white"
         android:fontFamily="sans-serif-medium"
         android:textSize="35dp"/>
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignUp"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="520dp"
+        android:layout_marginBottom="250dp"
+        />
+
 
 </RelativeLayout>
