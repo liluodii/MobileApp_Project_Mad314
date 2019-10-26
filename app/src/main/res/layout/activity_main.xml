@@ -45,35 +45,11 @@
         android:id="@+id/SignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Password"
+        android:layout_below="@+id/rdcheck"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="78dp"
+        android:layout_marginTop="520dp"
         android:layout_marginBottom="250dp"
         android:text="SIGN IN" />
-
-    <RadioButton
-        android:id="@+id/RDCustomer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="63dp"
-        android:layout_marginLeft="63dp"
-        android:layout_marginBottom="173dp"
-        android:text="User" />
-
-    <RadioButton
-        android:id="@+id/Employee"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="62dp"
-        android:layout_marginRight="62dp"
-        android:layout_marginBottom="180dp"
-        android:text="Employee" />
 
     <TextView
         android:id="@+id/heading"
@@ -103,5 +79,9 @@
         android:layout_marginBottom="250dp"
         />
 
-
+    <RadioGroup
+        android:id="@+id/rdcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        android:layout_below="@+id/Password"
 </RelativeLayout>
