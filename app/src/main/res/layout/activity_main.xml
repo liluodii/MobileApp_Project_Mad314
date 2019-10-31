@@ -27,7 +27,7 @@
         android:layout_below="@+id/Email"
         android:layout_centerInParent="true"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="51dp"
         android:layout_marginRight="50dp"
         android:ems="10"
         android:hint="Password"
@@ -53,21 +53,20 @@
 
     <TextView
         android:id="@+id/heading"
+        style="@style/TextAppearance.AppCompat.Headline"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
         android:layout_marginStart="60dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="152dp"
         android:layout_marginEnd="60dp"
-        android:layout_marginLeft="144dp"
-        android:layout_marginTop="110dp"
-        android:text="CAR RENTAL"
-        style="@style/TextAppearance.AppCompat.Headline"
-        android:textColor="@android:color/white"
         android:fontFamily="sans-serif-medium"
-        android:textSize="35dp"/>
+        android:text="CAR RENTAL"
+        android:textColor="@android:color/white"
+        android:textSize="35dp" />
 
     <Button
         android:id="@+id/signUp"
@@ -80,8 +79,27 @@
         />
 
     <RadioGroup
-        android:id="@+id/rdcheck"
+        android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_below="@+id/Password"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <RadioButton
+            android:id="@+id/Employee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:text="Employee" />
+
+        <RadioButton
+            android:id="@+id/Customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer" />
+
+    </RadioGroup>
 </RelativeLayout>

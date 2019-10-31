@@ -20,7 +20,7 @@ public class CustomerRepo {
         Customer cust = new Customer();
         cust.firstname = "Lilu";
         cust.lastname= "Odedra";
-        cust.username = "L101";
+        cust.username = "Liluodedra13@gmail.com";
         cust.Password = "LLL";
         this.customers.add(cust);
     }

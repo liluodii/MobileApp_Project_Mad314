@@ -9,10 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Car_Activity"></activity>
+        <activity android:name=".Car" />
+        <activity android:name=".CarListView" />
         <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".CustomerSignUp" />
         <activity android:name=".Modify" />
         <activity android:name=".LoginPage" />
