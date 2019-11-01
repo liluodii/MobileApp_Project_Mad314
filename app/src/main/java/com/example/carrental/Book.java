@@ -22,7 +22,7 @@ import java.util.Calendar;
 public class Book extends AppCompatActivity {
     private static final String TAG="Book";
     public DatePickerDialog.OnDateSetListener mDatesetListner;
-
+    public DatePickerDialog.OnDateSetListener mDatesetListner1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +49,23 @@ public class Book extends AppCompatActivity {
                 dialog.show();
             }
         });
+        enddate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Calendar cal=Calendar.getInstance();
+                int year=cal.get(Calendar.YEAR);
+                int month=cal.get(Calendar.MONTH);
+                int day=cal.get(Calendar.DAY_OF_MONTH);
+
+                DatePickerDialog dialog=new DatePickerDialog(
+                        Book.this,
+                        android.R.style.Theme_Holo_Light_Dialog_MinWidth,
+                        mDatesetListner1,
+                        year,month,day);
+                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                dialog.show();
+            }
+        });
         mDatesetListner=new DatePickerDialog.OnDateSetListener()
         {
             @Override
@@ -58,9 +75,24 @@ public class Book extends AppCompatActivity {
                 Log.d(TAG,"onDateset :mm/dd/yyyy:"+month+"/"+day+"/"+year);
                 String date=month+"/"+day+"/"+year;
                 startdate.setText(date);
+
             }
 
         };
+        mDatesetListner1=new DatePickerDialog.OnDateSetListener()
+        {
+            @Override
+            public void onDateSet(DatePicker datePicker,int year,int month,int day)
+            {
+                month=month+1;
+                Log.d(TAG,"onDateset :mm/dd/yyyy:"+month+"/"+day+"/"+year);
+                String date=month+"/"+day+"/"+year;
+                enddate.setText(date);
+
+            }
+
+        };
+
     }
 
 }
