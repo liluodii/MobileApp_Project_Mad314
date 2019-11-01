@@ -32,6 +32,18 @@ public class Book extends AppCompatActivity {
        final TextView startdate=findViewById(R.id.tvstartdate);
        final TextView enddate=findViewById(R.id.tvenddate);
         final Button btnok=findViewById(R.id.btnok);
+        btnbooknow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Calendar cal=Calendar.getInstance();
+                int year=cal.get(Calendar.YEAR);
+                int month=cal.get(Calendar.MONTH);
+                int day=cal.get(Calendar.DAY_OF_MONTH);
+                String date=month+"/"+day+"/"+year;
+                startdate.setText(date);
+            }
+        });
         startdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
