@@ -19,7 +19,7 @@ public class CarListView extends AppCompatActivity {
 
         carList = new ArrayList<>();
         carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
-        carList.add(new Car("Hyundai","Creat","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
+        carList.add(new Car("Hyundai","Creat","SX Diesel","White","2018","ABC146",R.drawable.nissanslawd));
         carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
         carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
         carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
@@ -39,7 +39,7 @@ public class CarListView extends AppCompatActivity {
 
         RecyclerView myrv = (RecyclerView) findViewById(R.id.recyclerview_id);
         CarAdapter mAdapter = new CarAdapter(this,carList);
-        myrv.setLayoutManager(new GridLayoutManager(this,3));
+        myrv.setLayoutManager(new GridLayoutManager(this,2));
         myrv.setAdapter(mAdapter);
 
 

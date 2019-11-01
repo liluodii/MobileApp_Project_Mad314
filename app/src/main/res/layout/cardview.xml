@@ -17,14 +17,14 @@
 
         <ImageView
             android:id="@+id/Car_img"
-            android:layout_width="match_parent"
+            android:layout_width="157dp"
             android:layout_height="160dp"
             android:background="@color/colorPrimaryDark"
             android:scaleType="centerCrop" />
 
         <TextView
             android:id="@+id/Car_brand"
-            android:layout_width="match_parent"
+            android:layout_width="155dp"
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="BMW"
