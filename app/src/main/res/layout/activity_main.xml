@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bklg"
+    android:background="@drawable/wallpaper"
     tools:context=".MainActivity">
 
     <EditText
@@ -38,6 +38,9 @@
         android:id="@+id/message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
@@ -50,23 +53,6 @@
         android:layout_marginTop="520dp"
         android:layout_marginBottom="250dp"
         android:text="SIGN IN" />
-
-    <TextView
-        android:id="@+id/heading"
-        style="@style/TextAppearance.AppCompat.Headline"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="68dp"
-        android:layout_marginTop="152dp"
-        android:layout_marginEnd="60dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="CAR RENTAL"
-        android:textColor="@android:color/white"
-        android:textSize="35dp" />
 
     <Button
         android:id="@+id/signUp"
@@ -102,4 +88,13 @@
             android:text="Customer" />
 
     </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="199dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/carlogo" />
 </RelativeLayout>
+
+

@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                     for (int i = 0; i < employees.size(); i++) {
                         Employee emp = employees.get(i);
                         if (emp.username.equals(inputid) && emp.Password.equals(inputpassword)) {
-                            Intent intent = new Intent(MainActivity.this, Modify.class);
+                            Intent intent = new Intent(MainActivity.this,EmployeeMenu.class);
                             startActivity(intent);
 
                         }
