@@ -11,19 +11,18 @@ public class Car {
     private String Color;
     private String Year;
     private String LicensePlate;
+    private String Price;
     private int Image;
 
 
-    // public Car(String creta, String hyundai, String sx_diesel, String white, int i, String s) {
-    // }
-
-    public Car(String brand, String type, String model, String color, String year, String licensePlate,int image) {
+    public Car(String brand, String type, String model, String color, String year, String licensePlate,String price,int image) {
         Type = type;
         Brand = brand;
         Model = model;
         Color = color;
         Year = year;
         LicensePlate = licensePlate;
+        Price = price;
         Image = image;
     }
 
@@ -49,6 +48,10 @@ public class Car {
 
     public String getLicensePlate() {
         return LicensePlate;
+    }
+
+    public String getPrice(){
+        return Price;
     }
 
     public int getImage() {
@@ -77,6 +80,10 @@ public class Car {
 
     public void setLicensePlate(String licensePlate) {
         LicensePlate = licensePlate;
+    }
+
+    public void setPrice(String price){
+        Price = price;
     }
 
     public void setImage(int image) {

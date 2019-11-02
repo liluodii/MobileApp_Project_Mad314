@@ -18,23 +18,23 @@ public class CarListView extends AppCompatActivity {
         setContentView(R.layout.activity_car_list_view);
 
         carList = new ArrayList<>();
-        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
-        carList.add(new Car("Hyundai","Creat","SX Diesel","White","2018","ABC146",R.drawable.nissanslawd));
-        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
-        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
-        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
-        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
-        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
-        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
-        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
-        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
-        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
-        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
-        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
-        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
-        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
-        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
-        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
+        carList.add(new Car("Volkswagen","Jetta","Bora A4","Grey","2018","ABC146","$79/day",R.drawable.volkswagenjetta));
+        carList.add(new Car("Nissan","Rouge","SL AWD","Red","2017","XYZ596","$65/day",R.drawable.nissanslawd));
+        carList.add(new Car("Hyundai","Venue","SX+","Blue","2019","ABC146","$75/day",R.drawable.venue));
+        carList.add(new Car("Hyundai","Elantra","SEL","White","2019","SUB146","$88/day",R.drawable.hyundaiielantra));
+        carList.add(new Car("Subaru","Legacy","Sedan AWD","Green","2018","ALU146","$70/day",R.drawable.subarulegacy));
+        carList.add(new Car("Toyota","Corolla","XLE","Black","2018","FAL146","$80/day",R.drawable.toyotacorolla));
+        carList.add(new Car("Ford","Ranger","XLT Super cab","White","2018","XYZ566","$78/day",R.drawable.fordranger));
+        carList.add(new Car("BMW","2 series","S5","White","2018","AWD546","$115/day",R.drawable.bmw5series));
+        carList.add(new Car("BMW","3 series","I8","White","2018","YGD876","$120/day",R.drawable.bmwi8));
+        carList.add(new Car("BMW","Creta","SX Diesel","White","2018","WDC646","$79/day",R.drawable.bmw));
+        carList.add(new Car("Mercedes","Benz","SX Diesel","Silver","2018","KJY346","$150/day",R.drawable.mercedesbenz));
+        carList.add(new Car("Alfa","Romeo","Romeo 4C","Black","2019","BGJ846","$100/day",R.drawable.alfa));
+        carList.add(new Car("Mercedes","Benz","Benz S1","white","2017","XUL746","$129/day",R.drawable.mercedessl));
+        carList.add(new Car("BMW","2 Series","C ClassX Diesel","Red","2015","KUL646","$110/day",R.drawable.bmwx5));
+        carList.add(new Car("Mercedes","Benz","C Class","Blue","2018","GUA746","$145/day",R.drawable.mbenzcclass));
+        carList.add(new Car("Infiniti","Coupe","SX Diesel","White","2017","FAZ346","$67/day",R.drawable.infiiticpoupe));
+        carList.add(new Car("Nissan","Rouge","SL AWD","Black","2019","TAT156","$77/day",R.drawable.nissanslawd));
 
 
         RecyclerView myrv = (RecyclerView) findViewById(R.id.recyclerview_id);

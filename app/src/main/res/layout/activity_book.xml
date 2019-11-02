@@ -3,8 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/bgcolor"
     android:layout_height="match_parent"
     tools:context=".Book">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/cardview_dark_background"
+        android:padding="10dp"
+        android:background="@color/colorAccent"
+        android:textStyle="bold"
+        android:backgroundTint="@color/cardview_light_background"
+        android:textSize="30sp"
+        android:textColor="@color/cardview_dark_background"
+        android:text="BOOKING"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnbooknow"
@@ -13,16 +32,20 @@
         android:text="Book Now"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.126" />
+        app:layout_constraintVertical_bias="0.214" />
 
     <TextView
         android:id="@+id/tvstartdate"
         android:layout_width="152dp"
         android:layout_height="42dp"
         android:hint="Start Date"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:background="@color/cardview_light_background"
+        android:backgroundTint="@color/cardview_light_background"
+        android:textColor="@color/cardview_dark_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.096"
@@ -33,7 +56,10 @@
     <TextView
         android:id="@+id/tvenddate"
         android:layout_width="142dp"
+        android:background="@color/cardview_light_background"
         android:layout_height="41dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:textSize="25dp"
         android:layout_marginEnd="36dp"
         android:layout_marginRight="36dp"
         android:hint="EndDate"
@@ -44,11 +70,29 @@
 
     <Button
         android:id="@+id/btnok"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="OK"
+        android:backgroundTint="@color/cardview_light_background"
+        android:padding="30px"
+        android:text="Confirm "
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintHorizontal_bias="0.0"
+
+
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="343dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685" />
+
+    <TextView
+        android:id="@+id/tvmsg"
+        android:layout_width="142dp"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="516dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
