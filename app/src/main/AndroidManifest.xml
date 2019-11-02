@@ -9,8 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".CustomerDisplay"></activity>
         <activity android:name=".ViewReservedCarList" />
+=======
+        <activity android:name=".ViewReservedCarList"></activity>
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
         <activity android:name=".EmployeeAddCar" />
         <activity android:name=".EmployeeMenu" />
         <activity android:name=".OrderDisp" />

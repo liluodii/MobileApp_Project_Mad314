@@ -27,12 +27,23 @@ public class Book extends AppCompatActivity {
     private static final String TAG="Book";
     public DatePickerDialog.OnDateSetListener mDatesetListner;
     public DatePickerDialog.OnDateSetListener mDatesetListner1;
+<<<<<<< HEAD
  /*public String yearcurr,daycurr,monthcurr, yeardate,daydate,monthdate,yeardate1,daydate1,monthdate1;*/
+=======
+<<<<<<< HEAD
+ /*public String yearcurr,daycurr,monthcurr, yeardate,daydate,monthdate,yeardate1,daydate1,monthdate1;*/
+=======
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
         final ReservationRepo reservationRepo =ReservationRepo.getInstance();
         final Button btnbooknow = findViewById(R.id.btnbooknow);
         final TextView startdate = findViewById(R.id.tvstartdate);
@@ -41,10 +52,23 @@ public class Book extends AppCompatActivity {
         final TextView msg=findViewById(R.id.tvmsg);
         final Intent intent1 = getIntent();
         final Intent okintent=new Intent(this,OrderDisp.class);
+<<<<<<< HEAD
+=======
+=======
+        final Button btnbooknow=findViewById(R.id.btnbooknow);
+       final TextView startdate=findViewById(R.id.tvstartdate);
+       final TextView enddate=findViewById(R.id.tvenddate);
+        final Button btnok=findViewById(R.id.btnok);
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
         btnbooknow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
                 Calendar cal = Calendar.getInstance();
                 int year = cal.get(Calendar.YEAR);
                 int month = cal.get(Calendar.MONTH)+1;
@@ -53,6 +77,16 @@ public class Book extends AppCompatActivity {
               /*  yearcurr = String.valueOf(Calendar.YEAR);
                 monthcurr = String.valueOf(Calendar.MONTH);
                 daycurr = String.valueOf(Calendar.DAY_OF_MONTH);*/
+<<<<<<< HEAD
+=======
+=======
+                Calendar cal=Calendar.getInstance();
+                int year=cal.get(Calendar.YEAR);
+                int month=cal.get(Calendar.MONTH);
+                int day=cal.get(Calendar.DAY_OF_MONTH);
+                String date=month+"/"+day+"/"+year;
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
                 startdate.setText(date);
             }
         });
@@ -113,6 +147,20 @@ public class Book extends AppCompatActivity {
                     Date date1 = sdf.parse(monthdate + "/" + daydate + "/" + yeardate);
                     //   Date currDate=sdf.parse(monthcurr+"/"+daycurr+"/"+yearcurr);
                     Date date2 = sdf.parse(monthdate1 + "/" + daydate1 + "/" + yeardate1);
+<<<<<<< HEAD
+
+
+                    if (date2.before(date1)) {
+                        Log.i(TAG, "END DATE BEFORE STARTDATE");
+                        enddate.setText("");
+                    }
+
+                } catch (ParseException ex) {
+                    Log.i(TAG, "PARSE EXCEPTION");
+
+                }*/
+                DatePickerDialog dialog = new DatePickerDialog(
+=======
 
 
                     if (date2.before(date1)) {
@@ -135,7 +183,36 @@ public class Book extends AppCompatActivity {
 
             }
         });
+<<<<<<< HEAD
         mDatesetListner = new DatePickerDialog.OnDateSetListener() {
+=======
+        enddate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Calendar cal=Calendar.getInstance();
+                int year=cal.get(Calendar.YEAR);
+                int month=cal.get(Calendar.MONTH);
+                int day=cal.get(Calendar.DAY_OF_MONTH);
+
+                DatePickerDialog dialog=new DatePickerDialog(
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
+                        Book.this,
+                        android.R.style.Theme_Holo_Light_Dialog_MinWidth,
+                        mDatesetListner1,
+                        year, month, day);
+                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                dialog.show();
+
+
+            }
+        });
+<<<<<<< HEAD
+        mDatesetListner = new DatePickerDialog.OnDateSetListener() {
+=======
+        mDatesetListner=new DatePickerDialog.OnDateSetListener()
+        {
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
                 month = month + 1;
@@ -143,6 +220,7 @@ public class Book extends AppCompatActivity {
                 String date = month + "/" + day + "/" + year;
                 startdate.setText(date);
 
+<<<<<<< HEAD
             }
 
         };
@@ -180,6 +258,48 @@ public class Book extends AppCompatActivity {
             }
         });
 
+    }
+=======
+            }
+
+        };
+        mDatesetListner1 = new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker datePicker, int year, int month, int day) {
+                month = month + 1;
+                Log.d(TAG, "onDateset :mm/dd/yyyy:" + month + "/" + day + "/" + year);
+                String date = month + "/" + day + "/" + year;
+                enddate.setText(date);
+
+            }
+
+        };
+        btnok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final String Brand  = intent1.getExtras().getString("Brand");
+                final String Type = intent1.getExtras().getString("Type");
+                final String Model = intent1.getExtras().getString("Model");
+                final String Color = intent1.getExtras().getString("Color");
+                final String Year = intent1.getExtras().getString("Year");
+                final String LicensePlate = intent1.getExtras().getString("Lplate");
+                final String Price = intent1.getExtras().getString("Price");
+                final int image = intent1.getExtras().getInt("image");
+                String sdate= startdate.getText().toString();
+                String edate=enddate.getText().toString();
+
+                Reservation reservation=new Reservation(Brand,Type,Model,Color,Year,LicensePlate,Price,image,sdate,edate);
+                reservationRepo.addReservation(reservation);
+                msg.setText("ORDER RESERVATION SUCCESSFUL");
+                startActivity(okintent);
+
+<<<<<<< HEAD
+            }
+        });
+
+=======
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
     }
     }
 

@@ -21,8 +21,18 @@
 
             <ImageView
                 android:id="@+id/Carimage"
+<<<<<<< HEAD
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
+=======
+<<<<<<< HEAD
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+=======
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
                 android:background="#2d2d2d"
                 android:scaleType="centerCrop" />
 
@@ -31,11 +41,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
                 android:background="#64d8fe"
                 android:gravity="center"
                 android:text="Brand"
                 android:textColor="@android:color/black"
                 android:textSize="25dp"
+<<<<<<< HEAD
+=======
+=======
+                android:background="#edecec"
+                android:gravity="center"
+                android:text="Brand"
+                android:textColor="@android:color/black"
+                android:textSize="32dp"
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
                 android:textStyle="bold" />
 
             <TextView
@@ -43,12 +67,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+<<<<<<< HEAD
                 android:background="#64d8fe"
                 android:layout_gravity="center"
                 android:padding="3dp"
                 android:text="Type"
                 android:textColor="@android:color/black"
                 android:textSize="25dp"
+=======
+<<<<<<< HEAD
+                android:background="#64d8fe"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:text="Type"
+                android:textColor="@android:color/black"
+                android:textSize="25dp"
+=======
+                android:background="#edecec"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Type"
+                android:textColor="@android:color/black"
+                android:textSize="32dp"
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
                 android:textStyle="bold"
                 android:gravity="center"/>
 
@@ -57,13 +99,31 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+<<<<<<< HEAD
                 android:background="#64d8fe"
                 android:padding="6dp"
+=======
+<<<<<<< HEAD
+                android:background="#64d8fe"
+                android:padding="6dp"
+=======
+                android:background="#edecec"
+                android:padding="10dp"
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
                 android:textStyle="bold"
                 android:layout_gravity="center"
                 android:textColor="@android:color/black"
                 android:text="Model"
+<<<<<<< HEAD
                 android:textSize="25dp"
+=======
+<<<<<<< HEAD
+                android:textSize="25dp"
+=======
+                android:textSize="32dp"
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
                 android:gravity="center"/>
 
             <TextView
@@ -72,10 +132,23 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center"
+<<<<<<< HEAD
                 android:padding="6dp"
                 android:background="#64d8fe"
                 android:text="Color"
                 android:textColor="@android:color/black"
+=======
+<<<<<<< HEAD
+                android:padding="6dp"
+                android:background="#64d8fe"
+                android:text="Color"
+                android:textColor="@android:color/black"
+=======
+                android:padding="10dp"
+                android:text="Color"
+                android:textColor="@android:color/white"
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
                 android:textSize="25dp"
                 android:textStyle="bold"
                 android:gravity="center" />
@@ -86,16 +159,34 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
                 android:padding="6dp"
                 android:text="Year"
                 android:background="#64d8fe"
                 android:textStyle="bold"
                 android:gravity="center"
                 android:textColor="@android:color/black"
+<<<<<<< HEAD
+=======
+=======
+                android:padding="10dp"
+                android:text="Year"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
                 android:textSize="25dp" />
 
             <TextView
                 android:id="@+id/tvLicplt"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -121,16 +212,47 @@
                 android:textColor="@android:color/holo_green_dark"
                 android:textSize="25dp"
                 android:textStyle="bold" />
+<<<<<<< HEAD
+=======
+=======
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="License Plate"
+                android:textColor="@android:color/white"
+                android:textSize="25dp" />
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
 
             <Button
                 android:id="@+id/btnbook"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
                 android:background="@color/cardview_light_background"
                 android:text="Book now"
                 android:textColor="@color/cardview_dark_background"
                 android:textSize="35dp"
                 android:textStyle="bold" />
+<<<<<<< HEAD
+=======
+=======
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:background="@color/cardview_light_background"
+                android:text="Book now" />
+
+
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
 
 
         </LinearLayout>

@@ -98,6 +98,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.713" />
 
+<<<<<<< HEAD
     <EditText
         android:id="@+id/etprice"
         android:layout_width="wrap_content"
@@ -112,6 +113,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.796" />
 
+=======
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
     <Button
         android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
@@ -131,10 +134,17 @@
         android:text=" "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
         app:layout_constraintHorizontal_bias="0.371"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+=======
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974" />
+>>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
