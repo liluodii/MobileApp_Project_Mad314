@@ -24,7 +24,6 @@ public class CarAdapter extends RecyclerView.Adapter<CarAdapter.MyViewHolder> {
         this.mContext = mContext;
         this.mData = mData;
     }
-
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

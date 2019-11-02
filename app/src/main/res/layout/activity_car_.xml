@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bgcolor"
     tools:context=".Car_Activity">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="744dp"
+        android:layout_height="780dp"
         android:layout_marginTop="10dp"
         android:padding="10dp">
 
@@ -20,75 +21,105 @@
 
             <ImageView
                 android:id="@+id/Carimage"
-                android:layout_width="125dp"
-                android:layout_height="170dp"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
                 android:background="#2d2d2d"
                 android:scaleType="centerCrop" />
 
             <TextView
                 android:id="@+id/tvBrand"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:background="#edecec"
+                android:gravity="center"
                 android:text="Brand"
-                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textSize="32dp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tvType"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:background="#edecec"
-                android:padding="8dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
                 android:text="Type"
-                android:textSize="18sp" />
+                android:textColor="@android:color/black"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                android:gravity="center"/>
 
             <TextView
                 android:id="@+id/tvModel"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:padding="8dp"
+                android:background="#edecec"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
                 android:text="Model"
-                android:textSize="18sp" />
+                android:textSize="32dp"
+                android:gravity="center"/>
 
             <TextView
                 android:id="@+id/tvColor"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:padding="8dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
                 android:text="Color"
-                android:textSize="18sp" />
+                android:textColor="@android:color/white"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/tvYear"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:padding="8dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
                 android:text="Year"
-                android:textSize="18sp" />
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="25dp" />
 
             <TextView
                 android:id="@+id/tvLicplt"
-                android:layout_width="205dp"
-                android:layout_height="56dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:layout_gravity="center"
                 android:padding="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
                 android:text="License Plate"
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
+                android:textColor="@android:color/white"
+                android:textSize="25dp" />
 
             <Button
                 android:id="@+id/btnbook"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Book" />
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:background="@color/cardview_light_background"
+                android:text="Book now" />
+
+
 
 
         </LinearLayout>
+
     </androidx.core.widget.NestedScrollView>
 
 </LinearLayout>
