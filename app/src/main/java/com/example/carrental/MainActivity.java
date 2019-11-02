@@ -1,6 +1,7 @@
 package com.example.carrental;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,6 +16,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+
     private RadioGroup radioGroup;
     RadioButton Customer;
     RadioButton Employee;
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         final EditText username = findViewById(R.id.Email);
         final TextView message=findViewById(R.id.message);

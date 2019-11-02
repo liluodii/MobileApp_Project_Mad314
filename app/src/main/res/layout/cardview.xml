@@ -3,7 +3,11 @@
     xmlns:cardview="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cardview_id"
     android:layout_width="200dp"
+<<<<<<< HEAD
     android:layout_height="235dp"
+=======
+    android:layout_height="215dp"
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
     android:layout_margin="5dp"
     android:clickable="true"
     android:foreground="?android:attr/selectableItemBackground"
@@ -43,6 +47,7 @@
             android:textColor="@color/design_default_color_primary_dark"
             android:textSize="16sp"
             android:textStyle="bold" />
+<<<<<<< HEAD
 
         <TextView
             android:id="@+id/Price"
@@ -53,6 +58,8 @@
             android:textSize="18sp"
             android:textColor="@color/colorAccent"
             android:textStyle="bold"/>
+=======
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

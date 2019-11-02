@@ -27,12 +27,16 @@ public class Book extends AppCompatActivity {
     private static final String TAG="Book";
     public DatePickerDialog.OnDateSetListener mDatesetListner;
     public DatePickerDialog.OnDateSetListener mDatesetListner1;
+<<<<<<< HEAD
  /*public String yearcurr,daycurr,monthcurr, yeardate,daydate,monthdate,yeardate1,daydate1,monthdate1;*/
+=======
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book);
+<<<<<<< HEAD
         final ReservationRepo reservationRepo =ReservationRepo.getInstance();
         final Button btnbooknow = findViewById(R.id.btnbooknow);
         final TextView startdate = findViewById(R.id.tvstartdate);
@@ -41,10 +45,17 @@ public class Book extends AppCompatActivity {
         final TextView msg=findViewById(R.id.tvmsg);
         final Intent intent1 = getIntent();
         final Intent okintent=new Intent(this,OrderDisp.class);
+=======
+        final Button btnbooknow=findViewById(R.id.btnbooknow);
+       final TextView startdate=findViewById(R.id.tvstartdate);
+       final TextView enddate=findViewById(R.id.tvenddate);
+        final Button btnok=findViewById(R.id.btnok);
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
         btnbooknow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+<<<<<<< HEAD
                 Calendar cal = Calendar.getInstance();
                 int year = cal.get(Calendar.YEAR);
                 int month = cal.get(Calendar.MONTH)+1;
@@ -53,6 +64,13 @@ public class Book extends AppCompatActivity {
               /*  yearcurr = String.valueOf(Calendar.YEAR);
                 monthcurr = String.valueOf(Calendar.MONTH);
                 daycurr = String.valueOf(Calendar.DAY_OF_MONTH);*/
+=======
+                Calendar cal=Calendar.getInstance();
+                int year=cal.get(Calendar.YEAR);
+                int month=cal.get(Calendar.MONTH);
+                int day=cal.get(Calendar.DAY_OF_MONTH);
+                String date=month+"/"+day+"/"+year;
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
                 startdate.setText(date);
             }
         });
@@ -135,7 +153,29 @@ public class Book extends AppCompatActivity {
 
             }
         });
+<<<<<<< HEAD
         mDatesetListner = new DatePickerDialog.OnDateSetListener() {
+=======
+        enddate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Calendar cal=Calendar.getInstance();
+                int year=cal.get(Calendar.YEAR);
+                int month=cal.get(Calendar.MONTH);
+                int day=cal.get(Calendar.DAY_OF_MONTH);
+
+                DatePickerDialog dialog=new DatePickerDialog(
+                        Book.this,
+                        android.R.style.Theme_Holo_Light_Dialog_MinWidth,
+                        mDatesetListner1,
+                        year,month,day);
+                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                dialog.show();
+            }
+        });
+        mDatesetListner=new DatePickerDialog.OnDateSetListener()
+        {
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
                 month = month + 1;
@@ -143,6 +183,7 @@ public class Book extends AppCompatActivity {
                 String date = month + "/" + day + "/" + year;
                 startdate.setText(date);
 
+<<<<<<< HEAD
             }
 
         };
@@ -181,5 +222,24 @@ public class Book extends AppCompatActivity {
         });
 
     }
+=======
+            }
+
+        };
+        mDatesetListner1=new DatePickerDialog.OnDateSetListener()
+        {
+            @Override
+            public void onDateSet(DatePicker datePicker,int year,int month,int day)
+            {
+                month=month+1;
+                Log.d(TAG,"onDateset :mm/dd/yyyy:"+month+"/"+day+"/"+year);
+                String date=month+"/"+day+"/"+year;
+                enddate.setText(date);
+
+            }
+
+        };
+
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
     }
 

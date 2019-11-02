@@ -93,8 +93,14 @@
         android:id="@+id/imageView2"
         android:layout_width="150dp"
         android:layout_height="199dp"
+<<<<<<< HEAD
         android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/carlogo" />
 </RelativeLayout>
 
 
+=======
+       android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/carlogo" />
+</RelativeLayout>
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e

@@ -22,8 +22,12 @@
         android:textColor="@color/cardview_dark_background"
         android:text="BOOKING"
         tools:layout_editor_absoluteX="105dp"
+<<<<<<< HEAD
         tools:layout_editor_absoluteY="1dp"
         tools:ignore="MissingConstraints" />
+=======
+        tools:layout_editor_absoluteY="1dp" />
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
 
     <Button
         android:id="@+id/btnbooknow"
@@ -86,6 +90,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.685" />
 
+<<<<<<< HEAD
     <TextView
         android:id="@+id/tvmsg"
         android:layout_width="142dp"
@@ -96,3 +101,7 @@
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
+=======
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+>>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e

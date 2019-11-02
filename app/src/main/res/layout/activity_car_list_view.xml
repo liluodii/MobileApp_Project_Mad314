@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/bgcolor"
     android:layout_width="match_parent"
+    android:background="@drawable/bgcolor"
     android:layout_height="match_parent"
     tools:context=".CarListView">
 
@@ -14,4 +15,5 @@
             android:layout_height="match_parent">
 
         </androidx.recyclerview.widget.RecyclerView>
+
 </LinearLayout>
