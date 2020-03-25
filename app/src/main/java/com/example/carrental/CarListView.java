@@ -19,6 +19,7 @@ public class CarListView extends AppCompatActivity {
 
         carList = new ArrayList<>();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
@@ -61,6 +62,25 @@ public class CarListView extends AppCompatActivity {
         carList.add(new Car("Nissan","Rouge","SL AWD","Black","2019","TAT156",R.drawable.nissanslawd));
 >>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
 >>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
+=======
+        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
+        carList.add(new Car("Hyundai","Creat","SX Diesel","White","2018","ABC146",R.drawable.nissanslawd));
+        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
+        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
+        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
+        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
+        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
+        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
+        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
+        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
+        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
+        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
+        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
+        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
+        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
+        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
+        carList.add(new Car("Hyundai","Creta","SX Diesel","White","2018","ABC146",R.drawable.hyundaicreta));
+>>>>>>> parent of 4bc2158... Final Project Submit
 
 
         RecyclerView myrv = (RecyclerView) findViewById(R.id.recyclerview_id);

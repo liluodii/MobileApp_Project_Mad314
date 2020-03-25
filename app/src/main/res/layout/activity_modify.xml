@@ -46,7 +46,11 @@
         Air Conditioning
         Automatic
         Downtown
+<<<<<<< HEAD
      "
+=======
+        "
+>>>>>>> parent of 4bc2158... Final Project Submit
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.128"

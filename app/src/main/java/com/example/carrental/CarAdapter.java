@@ -40,7 +40,6 @@ public class CarAdapter extends RecyclerView.Adapter<CarAdapter.MyViewHolder> {
         final Intent intent = new Intent(mContext,Car_Activity.class);
         holder.tvCarBrand.setText(mData.get(position).getBrand());
         holder.tvCarName.setText(mData.get(position).getType());
-        holder.tvPrice.setText(mData.get(position).getPrice());
         holder.CarImg.setImageResource(mData.get(position).getImage());
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,7 +52,6 @@ public class CarAdapter extends RecyclerView.Adapter<CarAdapter.MyViewHolder> {
                 intent.putExtra("Color",mData.get(position).getColor());
                 intent.putExtra("Year",mData.get(position).getYear());
                 intent.putExtra("License_Plate",mData.get(position).getLicensePlate());
-                intent.putExtra("Price",mData.get(position).getPrice());
                 intent.putExtra("Image",mData.get(position).getImage());
                 mContext.startActivity(intent);
             }
@@ -70,7 +68,6 @@ public class CarAdapter extends RecyclerView.Adapter<CarAdapter.MyViewHolder> {
 
         TextView tvCarBrand;
         TextView tvCarName;
-        TextView tvPrice;
         ImageView CarImg;
         CardView cardView;
 
@@ -80,7 +77,6 @@ public class CarAdapter extends RecyclerView.Adapter<CarAdapter.MyViewHolder> {
 
             tvCarBrand = (TextView) itemView.findViewById(R.id.Car_brand);
             tvCarName = (TextView) itemView.findViewById(R.id.Car_type);
-            tvPrice = (TextView) itemView.findViewById(R.id.Price);
             CarImg = (ImageView) itemView.findViewById(R.id.Car_img);
             cardView = (CardView) itemView.findViewById(R.id.cardview_id);
         }

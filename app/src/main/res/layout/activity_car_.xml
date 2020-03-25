@@ -4,12 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgcolor"
     tools:context=".Car_Activity">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="780dp"
+        android:layout_height="744dp"
         android:layout_marginTop="10dp"
         android:padding="10dp">
 
@@ -22,6 +21,7 @@
             <ImageView
                 android:id="@+id/Carimage"
 <<<<<<< HEAD
+<<<<<<< HEAD
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
 =======
@@ -33,14 +33,19 @@
                 android:layout_height="200dp"
 >>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
 >>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
+=======
+                android:layout_width="125dp"
+                android:layout_height="170dp"
+>>>>>>> parent of 4bc2158... Final Project Submit
                 android:background="#2d2d2d"
                 android:scaleType="centerCrop" />
 
             <TextView
                 android:id="@+id/tvBrand"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -60,13 +65,18 @@
                 android:textSize="32dp"
 >>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
 >>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
+=======
+                android:text="Brand"
+                android:textSize="18sp"
+>>>>>>> parent of 4bc2158... Final Project Submit
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tvType"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+<<<<<<< HEAD
 <<<<<<< HEAD
                 android:background="#64d8fe"
                 android:layout_gravity="center"
@@ -93,12 +103,19 @@
 >>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
                 android:textStyle="bold"
                 android:gravity="center"/>
+=======
+                android:background="#edecec"
+                android:padding="8dp"
+                android:text="Type"
+                android:textSize="18sp" />
+>>>>>>> parent of 4bc2158... Final Project Submit
 
             <TextView
                 android:id="@+id/tvModel"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+<<<<<<< HEAD
 <<<<<<< HEAD
                 android:background="#64d8fe"
                 android:padding="6dp"
@@ -125,12 +142,18 @@
 >>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
 >>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
                 android:gravity="center"/>
+=======
+                android:padding="8dp"
+                android:text="Model"
+                android:textSize="18sp" />
+>>>>>>> parent of 4bc2158... Final Project Submit
 
             <TextView
                 android:id="@+id/tvColor"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+<<<<<<< HEAD
                 android:layout_gravity="center"
 <<<<<<< HEAD
                 android:padding="6dp"
@@ -152,12 +175,18 @@
                 android:textSize="25dp"
                 android:textStyle="bold"
                 android:gravity="center" />
+=======
+                android:padding="8dp"
+                android:text="Color"
+                android:textSize="18sp" />
+>>>>>>> parent of 4bc2158... Final Project Submit
 
             <TextView
                 android:id="@+id/tvYear"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+<<<<<<< HEAD
                 android:layout_gravity="center"
 <<<<<<< HEAD
 =======
@@ -189,14 +218,21 @@
 >>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+=======
+                android:padding="8dp"
+                android:text="Year"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvLicplt"
+                android:layout_width="205dp"
+                android:layout_height="56dp"
+>>>>>>> parent of 4bc2158... Final Project Submit
                 android:layout_marginTop="10dp"
-                android:layout_gravity="left"
-                android:padding="6dp"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:background="#64d8fe"
+                android:padding="10dp"
                 android:text="License Plate"
                 android:textColor="@android:color/black"
+<<<<<<< HEAD
                 android:textSize="25dp" />
 
             <TextView
@@ -227,11 +263,15 @@
                 android:textSize="25dp" />
 >>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
 >>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
+=======
+                android:textSize="18sp" />
+>>>>>>> parent of 4bc2158... Final Project Submit
 
             <Button
                 android:id="@+id/btnbook"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -253,12 +293,12 @@
 
 >>>>>>> 536c863dffefa4a0aceedbc22dddef878cfbf28e
 >>>>>>> 89f82ab71ea2e2785e05bfb251933bd31be4b49e
+=======
+                android:text="Book" />
+>>>>>>> parent of 4bc2158... Final Project Submit
 
 
         </LinearLayout>
-
     </androidx.core.widget.NestedScrollView>
 
 </LinearLayout>
-
-

@@ -17,7 +17,7 @@ public class EmployeeRepo {
         Employee emp = new Employee();
         emp .firstname = "krishna";
         emp .lastname= "naik";
-        emp .username = "knaik@gmail.com";
+        emp .username = "k101";
         emp .Password = "kkk";
         this.employees.add(emp);
     }
@@ -31,7 +31,7 @@ public class EmployeeRepo {
         return instance;
     }
 
-    public void addEmployee(Employee employee) {
+    public void addCustomer(Employee employee) {
         this.employees.add(employee);
     }
 
